@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 430" font-family="Arial, Helvetica, sans-serif">
+  <rect width="760" height="430" fill="#ffffff"/>
+  <text x="380" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#0f172a">Skema Rangkaian UTS IoT - ESP32-S3</text>
+
+  <!-- ESP32-S3 -->
+  <rect x="300" y="60" width="160" height="300" rx="10" fill="#1e293b" stroke="#0f172a" stroke-width="2"/>
+  <text x="380" y="92" text-anchor="middle" font-size="15" font-weight="bold" fill="#ffffff">ESP32-S3</text>
+  <text x="380" y="110" text-anchor="middle" font-size="11" fill="#94a3b8">DevKitC-1</text>
+
+  <g font-size="12" fill="#e2e8f0">
+    <text x="312" y="150">GPIO 5</text>
+    <text x="312" y="190">GPIO 6</text>
+    <text x="312" y="240">GPIO 8 (SDA)</text>
+    <text x="312" y="280">GPIO 9 (SCL)</text>
+    <text x="312" y="320">5V</text>
+    <text x="312" y="345">GND</text>
+  </g>
+
+  <!-- HC-SR04 -->
+  <rect x="30" y="100" width="170" height="130" rx="8" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+  <text x="115" y="124" text-anchor="middle" font-size="14" font-weight="bold" fill="#0c4a6e">HC-SR04</text>
+  <g font-size="12" fill="#0c4a6e">
+    <text x="45" y="150">TRIG</text>
+    <text x="45" y="190">ECHO</text>
+    <text x="45" y="212">VCC / GND</text>
+  </g>
+
+  <!-- LCD -->
+  <rect x="560" y="200" width="170" height="130" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+  <text x="645" y="224" text-anchor="middle" font-size="14" font-weight="bold" fill="#14532d">LCD 1602 I2C</text>
+  <g font-size="12" fill="#14532d">
+    <text x="575" y="250">SDA</text>
+    <text x="575" y="280">SCL</text>
+    <text x="575" y="305">VCC / GND</text>
+  </g>
+
+  <!-- TRIG wire -->
+  <line x1="200" y1="146" x2="300" y2="146" stroke="#f59e0b" stroke-width="2.5"/>
+  <text x="250" y="138" text-anchor="middle" font-size="11" fill="#b45309">TRIG</text>
+
+  <!-- ECHO divider -->
+  <line x1="200" y1="186" x2="222" y2="186" stroke="#dc2626" stroke-width="2.5"/>
+  <rect x="222" y="178" width="34" height="16" fill="#fef3c7" stroke="#92400e"/>
+  <text x="239" y="190" text-anchor="middle" font-size="10" fill="#92400e">1k</text>
+  <line x1="256" y1="186" x2="300" y2="186" stroke="#dc2626" stroke-width="2.5"/>
+  <line x1="278" y1="186" x2="278" y2="206" stroke="#dc2626" stroke-width="2.5"/>
+  <rect x="270" y="206" width="16" height="34" fill="#fef3c7" stroke="#92400e"/>
+  <text x="293" y="228" font-size="10" fill="#92400e">2k</text>
+  <line x1="278" y1="240" x2="278" y2="258" stroke="#0f172a" stroke-width="2.5"/>
+  <text x="278" y="272" text-anchor="middle" font-size="10" fill="#0f172a">GND</text>
+  <text x="250" y="174" text-anchor="middle" font-size="11" fill="#b91c1c">ECHO (pembagi tegangan)</text>
+
+  <!-- I2C wires -->
+  <line x1="460" y1="236" x2="560" y2="236" stroke="#2563eb" stroke-width="2.5"/>
+  <line x1="460" y1="276" x2="560" y2="276" stroke="#7c3aed" stroke-width="2.5"/>
+  <text x="510" y="228" text-anchor="middle" font-size="11" fill="#1d4ed8">SDA</text>
+  <text x="510" y="268" text-anchor="middle" font-size="11" fill="#6d28d9">SCL</text>
+
+  <!-- Power -->
+  <line x1="460" y1="316" x2="520" y2="316" stroke="#ef4444" stroke-width="2.5"/>
+  <text x="490" y="334" text-anchor="middle" font-size="11" fill="#b91c1c">5V ke VCC (HC-SR04 dan LCD)</text>
+  <line x1="460" y1="341" x2="520" y2="341" stroke="#111827" stroke-width="2.5"/>
+  <text x="490" y="357" text-anchor="middle" font-size="11" fill="#111827">GND bersama</text>
+
+  <text x="380" y="405" text-anchor="middle" font-size="11" fill="#64748b">Semua GND harus tersambung ke GND ESP32-S3. Ganti gambar ini dengan hasil Fritzing jika diperlukan.</text>
+</svg>
