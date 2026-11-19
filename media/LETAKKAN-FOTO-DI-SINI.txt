@@ -1,0 +1,6 @@
+Taruh foto dan tangkapan layar di folder ini:
+
+- foto-rangkaian.jpg      foto rangkaian asli di breadboard
+- screenshot-portal.png   halaman captive portal (daftar WiFi)
+- screenshot-dashboard.png  dashboard jarak realtime
+- demo.mp4                video demo (jika terlalu besar, upload ke YouTube/Drive dan tulis tautannya di README)

@@ -1,0 +1,18 @@
+# PlatformIO / build
+.pio/
+.vscode/
+build/
+*.bin
+*.elf
+*.map
+
+# Arduino IDE
+*.hex
+
+# Rahasia (jangan pernah di-commit)
+secrets.h
+.env
+
+# Sistem
+.DS_Store
+Thumbs.db
