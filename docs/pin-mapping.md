@@ -7,7 +7,7 @@ Sesuai konstanta di `src/main.cpp`. Jika kamu mengubah pin di kode, ubah tabel i
 | HC-SR04 | VCC | 5V | |
 | HC-SR04 | GND | GND | |
 | HC-SR04 | TRIG | GPIO 5 | Output 3,3V sudah cukup memicu sensor |
-| HC-SR04 | ECHO | GPIO 6 | **Wajib lewat pembagi tegangan** |
+| HC-SR04 | ECHO | GPIO 18 | **Wajib lewat pembagi tegangan** |
 | LCD I2C | VCC | 5V | |
 | LCD I2C | GND | GND | |
 | LCD I2C | SDA | GPIO 8 | Pin I2C bawaan board DevKitC |
